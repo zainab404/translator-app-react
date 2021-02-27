@@ -1,0 +1,8 @@
+.bg-white overflow-hidden shadow rounded-lg{
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid black
+}
+

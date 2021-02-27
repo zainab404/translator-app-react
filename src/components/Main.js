@@ -40,15 +40,42 @@ const Main = () => {
   };
 
   return (
-    <div>
-      <TextInput originalText={originalText} setOriginalText={setOriginalText}/>
-      <Dropdown selectedLang={selectedLang} setSelectedLang={setSelectedLang} langOptions={langOptions} dropdownLabel="Select Language"/>
-      
-    <button onClick={onButtonClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-      Translate
-  </button>
-  <div><TextOutput translatedText={translatedText}/></div>
-  </div>  
+    <div class="bg-white overflow-hidden shadow rounded-lg">
+      <div class="px-4 py-5 sm:p-6">
+        <div className="flex place-content-center">
+          <div>
+
+            <div id="textinput">
+              <TextInput
+              inputLabel="Enter Text:"
+              originalText={originalText}
+              setOriginalText={setOriginalText}
+            />
+            </div>
+ <br></br>
+          <div id="dropdown">
+            <Dropdown
+              selectedLang={selectedLang}
+              setSelectedLang={setSelectedLang}
+              langOptions={langOptions}
+              dropdownLabel="Select Language"
+            />
+          </div>
+  <br></br>        
+          <button 
+            onClick={onButtonClick}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Translate
+          </button>
+  <br></br>
+          <div><TextOutput translatedText={translatedText}/></div>
+        </div>  
+      </div>
+    </div>
+</div>
+    
+    
     
   )
 };
