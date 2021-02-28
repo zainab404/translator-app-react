@@ -35,15 +35,14 @@ const Main = () => {
         key: 'AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM'
       }
     })
-    // console.log(selectedLang.value)
     setTranslatedText(data.data.translations[0].translatedText)
   };
 
   return (
     <div className="container mx-auto">
-      <div class="px-4 py-8 sm:p-6">
-        <div className="flex place-content-center">
-          <div className="mt-24" id="content">
+      <div class="px-4 py-8 sm:p-6ç">
+        <div className="flex place-content-center ">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="content">
             <div id="textinput">
               <TextInput
               inputLabel="Enter Text:"
@@ -73,9 +72,6 @@ const Main = () => {
       </div>
     </div>
 </div>
-    
-    
-    
   )
 };
 
