@@ -40,11 +40,10 @@ const Main = () => {
   };
 
   return (
-    <div class="bg-white overflow-hidden shadow rounded-lg">
-      <div class="px-4 py-5 sm:p-6">
+    <div className="container mx-auto">
+      <div class="px-4 py-8 sm:p-6">
         <div className="flex place-content-center">
-          <div>
-
+          <div className="mt-24" id="content">
             <div id="textinput">
               <TextInput
               inputLabel="Enter Text:"
